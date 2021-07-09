@@ -101,14 +101,15 @@ body {
 .nav2 .nav {
     width: 90%;
     margin: auto;
-    padding: 1rem 0;
+    padding: .6rem 0;
     display: flex;
     justify-content: space-between;
 }
 
 .nav2 .nav a {
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 1.45rem;
+    font-weight: 500;
     text-decoration: none;
     color: #fff;
 }
@@ -130,7 +131,7 @@ body {
     .nav2 .nav {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1.8rem;
+        grid-gap: 1rem;
     }
     .header .nav {
         grid-template-columns: repeat(4, 1fr);
@@ -139,7 +140,7 @@ body {
 
 @media screen and (max-width: 1050px) {
     body {
-        font-size: 25px;
+        font-size: 20px;
     }
     .contenedor-main {
         grid-template-columns: repeat(1, 1fr);
@@ -173,22 +174,14 @@ body {
     .header .texto {
         display: flex;
         flex-flow: row wrap;
-        padding: .2rem;
+        padding: .4rem 0;
     }
     .logo {
         width: 100%;
-        padding-bottom: 1.5rem;
+        padding-bottom: 1rem;
     }
     .texto2 {
         width: 100%;
     }
 
-
-    .nav2 .nav {
-        padding: .6rem 0;
-    }
-    
-    .nav2 .nav a {
-        font-size: 1.1rem;
-    }
 }
