@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #19181f;
+    background: #e2d4c4;
+    font-family: 'Encode Sans SC', sans-serif;
+    font-size: 16px;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+
+.header {
+    background: #f6ffff;
+    position: sticky;
+    top: 0%;
+}
+
+.header .texto {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+.header h2 {
+    font-size: 1.75rem;
+    padding-top: 0.75rem;
+    font-weight: 700;
+}
+
+.header p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-bottom: 0.3rem;
+}
+
+
+
+
+
+
+.contenedor-main {
+    margin: 2em auto;
+    display: grid;
+    grid-gap: 1.8rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+
+.contenedor-main .texto{
+    background: #f6ffff;
+    border-radius: 5%;
+    padding: 2em;
+}
+
+.contenedor-main .texto p {
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.25em;
+    margin-bottom: 1.25em;
+}
+
+.contenido2 {
+    background: #f6ffff;
+    border-radius: 5%;
+    padding: 2%;
+}
+
+.contenido2 h2 {
+    font-size: 1.8rem;
+    margin: auto;
+}
+
+.contenido2 img {
+    width: 100%;
+}
+
+.foto3 {
+    width: 100%;
+}
+
+
+
+
+
+.nav2 {
+    background: #f89345;
+}
+
+.nav2 .nav {
+    width: 90%;
+    margin: auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav2 .nav a {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #19181f;
+}
+
+.nav2 .nav a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .nav2 .nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.8rem;
+    }
+    .header .nav {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    body {
+        font-size: 25px;
+    }
+    .contenedor-main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, auto);
+    }
+    
+    .header .nav {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header .nav {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        font-size: 18px;
+    }
+    .nav2 .nav {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 17px;
+    }
+    .header .texto {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .logo {
+        width: 100%;
+        padding-bottom: 1.5rem;
+    }
+    .texto2 {
+        width: 100%;
+    }
+}
