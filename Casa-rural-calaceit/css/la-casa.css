@@ -233,12 +233,11 @@ body {
 .descripcion {
     width: 100%;
     background-color: #A34A28;
-    padding: 0rem;
+    padding: 1.5rem;
     border-radius: 4%;
 }
 
 .cocina2 .descripcion {
-    padding-bottom: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
