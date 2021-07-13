@@ -216,6 +216,17 @@ body {
 
 
 
+@media screen and (max-width: 900px) {
+    .contenedor-main {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .foto {
+        width: 100%;
+    }
+}
+
+
 @media screen and (max-width: 780px) {
     body {
         font-size: 13px;
@@ -223,13 +234,6 @@ body {
     .nav2 .nav {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 0.7rem;
-    }
-    .contenedor-main {
-        display: flex;
-        flex-flow: row wrap;
-    }
-    .foto {
-        width: 100%;
     }
     .footer .footer__contenedor {
         grid-template-columns: repeat(2, 1fr);
