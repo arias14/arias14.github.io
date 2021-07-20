@@ -1,0 +1,311 @@
+:root {
+    --azul: #2940D3;
+    --negro: #1B2021;
+    --blanco: #EDEEF7;
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--blanco);
+    color: var(--negro);
+}
+
+body::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: #0a193198;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #0a1931ec;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+
+
+/*************************************************/
+
+header {
+    background: linear-gradient(#1856bb69, #1856bb50),url(../img/fondo1.jpg);
+    background-attachment: fixed;
+    height: 76vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav {
+    background: #0a1931ec;
+    color: var(--blanco);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.nav .contenedor {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: .9rem 0;
+}
+
+.nav .menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav .menu a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 1rem;
+} 
+
+.nav .menu a:hover {
+    text-decoration: underline;
+}
+
+.logo p {
+    font-size: 1.4rem;
+}
+
+
+.header .contenedor {
+    /*display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;*/
+    height: 76vh;
+    position: relative;
+    padding: 17rem 0 0 0;
+}
+
+.header__texto {
+    position: absolute;
+    right: 0rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin:  auto;
+    width: 50vw;
+    height:max-content;
+    background: #0a1931c7;
+    color: var(--blanco);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.header__titulo {
+    text-align: center;
+    margin-bottom: .75rem;
+}
+
+.header__titulo h1 {
+    font-size: 2.2rem;
+}
+
+.header__parrafo p {
+    font-size: 1.15rem;
+    line-height: 1.8rem;
+}
+
+
+/*************************************************/
+
+
+.sobre,
+.proyectos,
+.conocimientos {
+    width: 100%;
+}
+
+.sobre .contenedor {
+    padding: 4.75rem 0 0 0;
+    text-align: center;
+}
+
+.sobre__texto {
+    width: 75%;
+    margin: auto;
+}
+
+.sobre__titulo {
+    margin-bottom: 0.75rem;
+}
+
+.sobre__titulo h2 {
+    font-size: 1.8rem;
+}
+
+.sobre p {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+
+/*************************************************/
+
+
+.conocimientos .contenedor {
+    margin-top: 4rem;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+}
+
+.conocimientos__texto {
+    flex: 1;
+    min-width: 300px;
+}
+
+
+
+
+.proyectos .contenedor {
+    padding: 5rem 0 0 0;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.proyectos .contenedor {
+    grid-template-columns: 35% 65%;
+}
+
+.conocimientos__titulo,
+.proyectos__titulo {
+    margin-bottom: 0.6rem;
+}
+
+.conocimientos__titulo h2,
+.proyectos__titulo h2 {
+    font-size: 1.6rem;
+}
+
+.conocimientos__parrafo p,
+.proyectos__parrafo p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+
+
+.proyectos_ {
+    display: grid;
+    gap: 1.3rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.proyecto__titulo {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.proyecto__parrafo p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+
+/*************************************************/
+
+
+.proyecto .foto img {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+
+/*************************************************/
+
+
+.footer {
+    margin-top: 4rem;
+    padding: 1.2rem 0;
+    background: var(--negro);
+    color: var(--blanco);
+}
+
+.footer__texto {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1.2rem;
+}
+
+
+/*************************************************/
+
+@media screen and (max-width: 800px) {
+    .header__texto {
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .sobre__texto {
+        width: 80vw;
+    }
+    .proyectos .contenedor {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 2;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .conocimientos .contenedor {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 2;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    :root {
+        font-size: 14px;
+    }
+    /*
+    .nav .contenedor {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+    */
+
+    .header .contenedor {
+        padding: 15.5rem 0 0 0;
+    }
+    .header__texto {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    :root {
+        font-size: 12px;
+    }
+    .proyectos_ {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
