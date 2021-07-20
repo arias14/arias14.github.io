@@ -43,7 +43,6 @@ body::-webkit-scrollbar-thumb {
 header {
     background: linear-gradient(#1856bb69, #1856bb50),url(../img/fondo1.jpg);
     background-attachment: fixed;
-    height: 76vh;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -59,8 +58,9 @@ header {
 
 .nav .contenedor {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
+    gap: 0.75rem;
     align-items: center;
     padding: .9rem 0;
 }
@@ -86,25 +86,12 @@ header {
 
 
 .header .contenedor {
-    /*display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;*/
-    height: 76vh;
-    position: relative;
-    padding: 17rem 0 0 0;
+    padding: 10.5rem 0 7rem 0;
 }
 
 .header__texto {
-    position: absolute;
-    right: 0rem;
-    top: 0;
-    bottom: 0;
-    left: 0;
     margin:  auto;
-    width: 50vw;
-    height:max-content;
+    width: 62%;
     background: #0a1931c7;
     color: var(--blanco);
     padding: 1.5rem;
@@ -281,11 +268,8 @@ header {
     :root {
         font-size: 14px;
     }
-    .header .contenedor {
-        padding: 15.5rem 0 0 0;
-    }
     .header__texto {
-        width: 80vw;
+        width: 78%;
     }
 }
 
@@ -293,14 +277,11 @@ header {
     :root {
         font-size: 13px;
     }
-}
-
-@media screen and (max-width: 420px) {
     .proyectos_ {
         min-width: 90%;
         max-width: 100%;
     }
     .proyecto {
-        min-width: 200px;
+        min-width: 215px;
     }
 }
