@@ -43,10 +43,11 @@ body::-webkit-scrollbar-thumb {
 /*************************************************/
 
 header {
-    background: linear-gradient(#1856bb78, #1856bb50),url(../img/fondo1.jpg);
+    background: linear-gradient(#1856bb78, #1856bb50),url(../img/fondo.jpg);
     width: 100%;
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
