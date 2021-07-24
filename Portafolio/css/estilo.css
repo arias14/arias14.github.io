@@ -217,9 +217,16 @@ header {
 }
 
 
+.proyecto__texto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+
+
 .proyecto__titulo h3 {
     font-size: 1.45rem;
-    margin-bottom: 0.5rem;
 }
 
 .proyecto__parrafo p {
