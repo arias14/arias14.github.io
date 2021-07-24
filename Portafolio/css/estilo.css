@@ -135,9 +135,7 @@ header {
     margin: auto;
 }
 
-.sobre__titulo {
-    margin-bottom: 0.75rem;
-}
+
 
 .sobre__titulo h2 {
     font-size: 1.8rem;
@@ -200,10 +198,7 @@ header {
 
 
 
-.conocimientos__titulo,
-.proyectos__titulo {
-    margin-bottom: 0.6rem;
-}
+
 
 .conocimientos__titulo h2,
 .proyectos__titulo h2 {
@@ -216,6 +211,13 @@ header {
     line-height: 1.6rem;
 }
 
+.proyectos__texto,
+.conocimientos__texto,
+.sobre__texto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
 
 .proyecto__texto {
     display: flex;
